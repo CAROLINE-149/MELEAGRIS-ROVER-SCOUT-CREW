@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery | MELEAGRIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;800&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Styles/gallery.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <img
+            src="https://res.cloudinary.com/t6ziwlkp/image/upload/v1795739776/WhatsApp_Image_2026-11-27_at_01.05.03-removebg-preview_1_yx16q4.png"
+            alt="Meleagris Rover Crew Logo"
+            class="brand-logo"
+          />
+          <span>
+            <b>MELEAGRIS</b>
+            <small>ROVER CREW</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-nav-en="Home">Home</a>
+          <a href="about.html" data-nav-en="About">About</a>
+          <a href="leadership.html" data-nav-en="Leadership">Leadership</a>
+          <a href="events.html" data-nav-en="Events">Events</a>
+          <a href="gallery.html" data-nav-en="Gallery">Gallery</a>
+          <a href="contact.html" data-nav-en="Contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <header class="hero">
+      <div class="wrap">
+        <h1>Our Adventures, in <span>Pictures</span></h1>
+        <p>
+          Take a glimpse into our world of adventure, learning, friendship, and
+          service. Explore the moments that make our scouting journey
+          unforgettable.
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <p class="count" id="count" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+    </main>
+
+    <div
+      class="lb"
+      id="lb"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo viewer"
+    >
+      <button class="close" aria-label="Close">&times;</button>
+      <button class="prev" aria-label="Previous photo">&#8249;</button>
+      <figure style="display: contents">
+        <img id="lbImg" alt="" />
+        <figcaption id="lbCap"></figcaption>
+      </figure>
+      <button class="next" aria-label="Next photo">&#8250;</button>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="/HTML/index.html">
+            <img
+              src="https://res.cloudinary.com/t6ziwlkp/image/upload/v1795739776/WhatsApp_Image_2026-11-27_at_01.05.03-removebg-preview_1_yx16q4.png"
+              alt="Meleagris Rover Crew Logo"
+              class="brand-logo"
+            />
+            <span>
+              <b>MELEAGRIS</b>
+              <small>ROVER CREW</small>
+            </span>
+          </a>
+          <p
+            data-en="Growing through adventure, leadership and service at Chuka University."
+          >
+            Growing through adventure, leadership and service at Chuka
+            University.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-en="Explore">Explore</h4>
+          <a href="/HTML/about.html">About</a>
+          <a href="/HTML/events.html">Events &amp; News</a>
+          <a href="/HTML/gallery.html">Gallery</a>
+        </div>
+
+        <div>
+          <h4 data-en="Get involved">Get involved</h4>
+          <a href="/HTML/leadership.html">Leadership</a>
+          <a href="/HTML/contact.html">Contacts</a>
+          <a href="/HTML/events.html">Events</a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year">2026</span> Meleagris Rover Crew. All rights
+          reserved.</span
+        >
+        <span>Built with the Rover spirit.</span>
+      </div>
+    </footer>
+
+    <script src="/JS/gallery.js"></script>
+  </body>
+</html>
